@@ -11,7 +11,7 @@ export class SimpleGreeting extends LitElement {
   render() {
     return html`<p>Hello, ${this.name}!</p>`;
   }
-
+}
 static getMetaConfig() 
 {
         // plugin contract information
@@ -41,5 +41,5 @@ static getMetaConfig()
             }
         };
     }
-}
+
 
