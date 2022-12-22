@@ -5,18 +5,10 @@ import {customElement, property} from 'lit/decorators.js';
 const elementName = 'zwc-greetings';
 customElements.define(elementName, SimpleGreeting);
 
-@customElement('simple-greeting')
+
 export class SimpleGreeting extends LitElement {
-  static styles = css`p { color: blue }`;
-
-  @property()
-  name = 'Somebody';
-
-  render() {
-    return html`<p>Hello, ${this.name}!</p>`;
-  }
-}
-static getMetaConfig() 
+  
+  static getMetaConfig() 
 {
         // plugin contract information
         return {
@@ -45,5 +37,17 @@ static getMetaConfig()
             }
         };
     }
+
+  
+  
+  static styles = css`p { color: blue }`;
+
+  @property()
+  name = 'Somebody';
+
+  render() {
+    return html`<p>Hello, ${this.name}!</p>`;
+  }
+}
 
 
