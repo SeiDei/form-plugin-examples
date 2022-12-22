@@ -5,6 +5,7 @@ import {customElement, property} from 'lit/decorators.js';
 const elementName = 'zwc-greetings';
 customElements.define(elementName, SimpleGreeting);
 
+@customElement('simple-greeting')
 export class SimpleGreeting extends LitElement {
   static styles = css`p { color: blue }`;
 
