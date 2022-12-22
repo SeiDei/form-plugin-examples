@@ -40,3 +40,6 @@ static getMetaConfig() {
             }
         };
     }
+// registering the web component.
+const elementName = 'zwc-greetings';
+customElements.define(elementName, SimpleGreeting);
