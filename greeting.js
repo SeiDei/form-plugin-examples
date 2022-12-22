@@ -11,7 +11,7 @@ export class SimpleGreeting extends LitElement {
   render() {
     return html`<p>Hello, ${this.name}!</p>`;
   }
-}
+
 static getMetaConfig() 
 {
         // plugin contract information
@@ -41,6 +41,7 @@ static getMetaConfig()
             }
         };
     }
+}
 // registering the web component.
 const elementName = 'zwc-greetings';
 customElements.define(elementName, SimpleGreeting);
