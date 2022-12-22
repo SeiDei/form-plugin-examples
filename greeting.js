@@ -1,10 +1,6 @@
 import {css, html, LitElement, styleMap} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 import {customElement, property} from 'lit/decorators.js';
 
-// registering the web component.
-const elementName = 'zwc-greetings';
-customElements.define(elementName, SimpleGreeting);
-
 
 export class SimpleGreeting extends LitElement {
   
@@ -49,5 +45,9 @@ export class SimpleGreeting extends LitElement {
     return html`<p>Hello, ${this.name}!</p>`;
   }
 }
+
+// registering the web component.
+const elementName = 'zwc-greetings';
+customElements.define('zwc-greetings', SimpleGreeting);
 
 
