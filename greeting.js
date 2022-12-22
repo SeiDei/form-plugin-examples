@@ -1,7 +1,7 @@
-import {html, css, LitElement} from 'lit';
+import {css, html, LitElement, styleMap} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 import {customElement, property} from 'lit/decorators.js';
 
-@customElement('simple-greeting')
+@customElement('zwc-greeting')
 export class SimpleGreeting extends LitElement {
   static styles = css`p { color: blue }`;
 
@@ -12,7 +12,8 @@ export class SimpleGreeting extends LitElement {
     return html`<p>Hello, ${this.name}!</p>`;
   }
 }
-static getMetaConfig() {
+static getMetaConfig() 
+{
         // plugin contract information
         return {
             controlName: 'greetings',
